@@ -7,11 +7,10 @@ Trianglify is a library that I wrote to generate nice SVG background images like
 
 # Getting Trianglify
 
-You can grab Trianglify with your preferred package manager:
+You can grab Trianglify with npm (recommended):
 
 ```
 npm install trianglify
-bower install trianglify
 ```
 
 Include it in your HTML via CDNJS:
@@ -142,6 +141,10 @@ var pattern = Trianglify({color_function: colorFunc})
 ### stroke_width
 
 Number, defaults to `1.51`. Specify the width of the stroke on triangle shapes in the pattern. The default value is the ideal value for eliminating antialiasing artifacts when rendering patterns to a canvas.
+
+### points
+
+Array of points ([x, y]) to trianglulate. When not specified an array randomised points is generated filling the space.
 
 # License
 
